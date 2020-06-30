@@ -10,3 +10,5 @@ def isprime(n):
 
 if __name__ == '__main__':
     print(iseven(10), iseven(11))
+else:
+    print("Importing number_funs")
