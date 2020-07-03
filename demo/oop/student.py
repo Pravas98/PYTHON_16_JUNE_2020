@@ -1,4 +1,11 @@
 class Student:
+    #Class attribute or static attribute
+    gst = 18
+
+    @staticmethod
+    def get_gst():
+        return Student.gst
+
     # Constructor
     def __init__(self, name, course, feepaid=0):
         # Object Attributes

@@ -1,10 +1,10 @@
 class Person:
     def __init__(self, name, age):
-        self.name = name
+        self.__name = name
         self.__age = age  # private attribute
 
     def print_details(self):
-        print(self.name, self.__age)
+        print(self.__name, self.__age)
 
 
 p1 = Person("Abc", 20)
