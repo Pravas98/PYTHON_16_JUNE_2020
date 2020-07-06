@@ -18,3 +18,4 @@ class C(A, B):
 
 obj = C()
 obj.process()
+print(C.mro())
