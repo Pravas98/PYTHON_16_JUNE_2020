@@ -25,4 +25,5 @@ class Student(Person):
 
 
 s = Student("MS CS")
+print(s.get_occupation())
 print(isinstance(s, Person))
