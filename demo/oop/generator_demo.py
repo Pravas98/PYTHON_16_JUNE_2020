@@ -1,9 +1,9 @@
-
 def numbers():
-    for n in range(1,3):
+    for n in range(1, 3):
         yield n
 
-def primes(min,max):
+
+def primes(min, max):
     pass
 
 
@@ -12,4 +12,3 @@ print(g)
 print(next(g))
 print(next(g))
 print(next(g))
-
