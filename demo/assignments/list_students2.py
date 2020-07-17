@@ -5,13 +5,13 @@ with open("students2.txt", "rt") as file:
     students = {}
     today = datetime.now()
     for line in file.readlines():
-        # look for name
+        # remove all non-digit, non-alpha and non-space chars
+        line = re.sub(r"[^0-9A-Za-z ]",'',line)
         m = re.search(r"[A-Za-z ]+", line)
-        print(line, m)
         if m is None:  # Name not found
             continue
         else:
-            name = m.group()
+            name = m.group().strip()
 
         # look for dob
         m = re.search(r"\d+", line)
