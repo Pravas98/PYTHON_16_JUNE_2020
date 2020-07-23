@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 import requests
 
 def index(request):
@@ -23,3 +23,4 @@ def get_country_info(request):
                                                          'message': 'Country Not Found!'})
     else:
         return render(request, 'country_info.html')
+
